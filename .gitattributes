@@ -1,0 +1,18 @@
+*text=auto eol=lf
+*.json text eol=lf
+
+#fonts
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+#images
+*.png binary
+*.svg binary
+*.jpg binary
+*.jpeg binary
+
+*.swf binary
+*.tar binary

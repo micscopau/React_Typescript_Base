@@ -1,0 +1,15 @@
+dist/
+node_modules/
+
+*.thml
+*.json
+*.log
+*.lock
+*.ts*
+*.txt
+
+.eslintignore
+.gitignore
+.gitattributes
+.stylelintignore
+.yarnrc

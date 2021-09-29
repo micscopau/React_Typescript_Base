@@ -1,0 +1,61 @@
+{
+  "parser":"@typescript-eslint/parser",
+  "parserOptions":{
+    "sourceTYpe":"module",
+    "project":"./tsconfig.json"
+  },
+  "plugins":[
+    "header"
+  ],
+  "rules":{
+    "@typescript-eslint/indent":[
+      "error",
+      2
+    ],
+    "@typescript-eslint/member-ordering":[
+      "error",
+      {
+        "default": [
+          "public-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "quotes": [ 2, "single"],
+    "header/header":[
+      2,
+      "Header.txt",
+      {
+        "lineEndings":"unix"
+      }
+    ],
+    "indent": "off",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "max-len": [
+      "warn",
+      { "code": 120 }
+    ],
+    "no-multi-spaces": "warn",
+    "object-curly-spacing": [
+      "warn", 
+      "never"
+    ],
+    "react/jsx-curly-spacing": [
+      "warn",
+      "never"
+    ],
+    "template-curly-spacing": [
+      "warn",
+      "never"
+    ]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ]
+}
